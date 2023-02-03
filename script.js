@@ -22,7 +22,8 @@ function handleSteps(event) {
         }
         
     }
-    disableButtons()
+    setTimeout(disableButtons, 100);
+    // disableButtons()
 }
 
 

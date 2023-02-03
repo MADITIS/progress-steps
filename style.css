@@ -19,6 +19,7 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    overflow: hidden;
 }
 
 a {
@@ -97,4 +98,10 @@ a {
 }
 .disabled:hover {
     background-color: rgb(62, 66, 64);
+}
+@media (max-width: 400px){
+    .container {
+       max-width:95vw;
+       /* overflow: hidden; */
+    }
 }
