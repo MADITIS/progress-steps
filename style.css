@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap')
+
+
+:root{
+    --primary-background-fill: hsl(203, 17%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem 2.5rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(48, 102, 87, 0.5);
+
+}
+
+.container {
+    background-color: rgb(25, 18, 26);
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    flex: 0.3;
+
+}
+
+.circle {
+    border: 3px solid rgb(62, 66, 64);
+    border-radius: 50%;
+    /* padding: 0.5rem; */
+    width:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    transition: all 0.8s ease-in-out;
+}
+
+.container > .circles {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.btns {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.circle.active {
+    border: 3px solid rgb(108, 192, 143);
+}
+
+.progress-line {
+    width:8rem;
+    height: 3px;
+    background-color: rgb(62, 66, 64);
+    /* border: 2px solid rgb(62, 66, 64); */
+    align-self: center;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.enabled {
+    background-color: rgba(31, 66, 56, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: rgb(62, 66, 64);
+    cursor: not-allowed;
+    transition: none;
+    transform: none;
+}
+.disabled:hover {
+    background-color: rgb(62, 66, 64);
+}
